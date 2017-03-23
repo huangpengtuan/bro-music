@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html" />
+    <!-- 指定以最新的IE版本模式来显示网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对360浏览器的内核调用,强制调用极速模式 -->
+    <meta name="renderer" content="webkit" />
+    <!--[if lt IE 10]>
+    <meta name="renderer" content="ie-stand" />
+    <![endif]-->
+    <!--[if !IE]>
+    <meta name="renderer" content="ie-stand" />
+    <!<![endif]-->
+    <!--[if lt IE 9]>
+          <script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- 确保设备能正常显示响应式页面 -->
+    <!-- 告诉webkit内核浏览器初始缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 判断浏览器版本.IE8以下版本,bootstrap支持不了.加个提示 -->
+    <!--[if IE]>      
+          <!--[if IE 6]>
+              <div class="ie"></div>
+          <![endif]-->
+    <!-- 判断浏览器版本IE6以下版本 -->
+    <!--[if lt IE 6]> 
+               <div class="ie"></div>
+          <![endif]-->
+    <!--[if IE 7]>
+               <div class="ie"></div>
+          <![endif]-->
+    <![endif]-->
+    <title>contact</title>
+    
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <!-- 导航css -->
+    <link rel="stylesheet" href="css/fatNav.css">    
+
+    <!-- 表单css -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    
+</head>
+<body>
+    <form action="mailto:philemon.muzik@gmail.com">
+        <header>
+            <a class="cd-logo" href="#0"><img src="img/logo.png" alt="Logo"></a>
+        </header>
+
+        <div class="fat-nav">
+            <div class="fat-nav_wrapper">
+                <ul>
+                    <li><a href="index.html">about me</a></li>
+                    <li><a href="songs.html">my songs</a></li>
+                    <li><a href="photos.html">photos</a></li>
+                    <li><a href="videos.html">videos</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="contact.html">bookings</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <main>        
+            <div class="container">
+                <div class="cd-form floating-labels">
+                    <fieldset>
+                        <legend>Thank you for your interest in Bro. Philemon. Please take a moment to fill out the booking form below. If you find that you are having trouble with the form, please email this information to philemon.muzik@gmail.com and one of our team members will respond within 7-10 days.</legend>
+
+                        <div class="error-message">
+                            <p>Please enter a valid email address</p>
+                        </div>
+
+                        <div class="icon">Name
+                            <input class="user" type="text" name="cd-name" id="cd-name"  required>
+                        </div>
+
+                        <div class="icon">Email
+                            <input class="email error" type="email" name="cd-email" id="cd-email"  required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message</legend>               
+                        <div class="icon">Additional Info
+                            <textarea class="message" name="cd-textarea" id="cd-textarea"  required></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>        
+            
+        </main>
+        <footer>
+            <section class="footer">
+                <a class="coyright" href="">Copyright 2015 Bro. Philemon</a>
+                <a class="powerd" href="">Powerd by:Global Exibit</a>
+            </section>
+        </footer>
+    </form>
+<script src="js/jquery-1.11.1.min.js"></script>    
+<!-- nav -->
+<script type="text/javascript" src="js/fatNav.js"></script>
+<script >
+    (function() {
+        
+        $.fatNav();
+        
+    }());
+</script>
+
+
+</body>
+</html>

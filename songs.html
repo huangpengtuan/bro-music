@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html" />
+    <!-- 指定以最新的IE版本模式来显示网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对360浏览器的内核调用,强制调用极速模式 -->
+    <meta name="renderer" content="webkit" />
+    <!--[if lt IE 10]>
+    <meta name="renderer" content="ie-stand" />
+    <![endif]-->
+    <!--[if !IE]>
+    <meta name="renderer" content="ie-stand" />
+    <!<![endif]-->
+    <!--[if lt IE 9]>
+          <script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- 确保设备能正常显示响应式页面 -->
+    <!-- 告诉webkit内核浏览器初始缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 判断浏览器版本.IE8以下版本,bootstrap支持不了.加个提示 -->
+    <!--[if IE]>      
+          <!--[if IE 6]>
+              <div class="ie"></div>
+          <![endif]-->
+    <!-- 判断浏览器版本IE6以下版本 -->
+    <!--[if lt IE 6]> 
+               <div class="ie"></div>
+          <![endif]-->
+    <!--[if IE 7]>
+               <div class="ie"></div>
+          <![endif]-->
+    <![endif]-->
+    <title>songs</title>
+    
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <!-- 导航css -->
+    <link rel="stylesheet" href="css/fatNav.css">
+
+    <!-- 音乐css -->    
+    <link href="css/jplayer.css" rel="stylesheet">
+    <link href="css/songs.css" rel="stylesheet">
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        //<![CDATA[
+        $(document).ready(function(){
+
+            new jPlayerPlaylist({
+                jPlayer: "#jquery_jplayer_1",
+                cssSelectorAncestor: "#jp_container_1"
+            }, [
+                {
+                    title:"<img src='img/sj_index_1.jpg' alt='' /><div class='item-song'>He lives in you, he lives in mehe lives in me</div>",                    
+                    buy : "#",
+                    // itunes :"",
+                    // buy : "",
+                    // download : "",
+                    mp3:"http://qzone.haoduoge.com/music6/2015-07-29/1438176942.mp3"
+                    // oga:""
+                },
+                {
+                    title:"<img src='img/sj_index_2.jpg' alt='' /><div class='item-song'>I saw you dancing</div>",
+                    buy : "#",
+                    mp3:"http://qzone.haoduoge.com/music6/2015-07-29/1438162359.mp3"
+                    
+                },
+                {
+                    title:"<img src='img/sj_index_3.jpg' alt='' /><div class='item-song'>Sands of Time</div>",
+                    buy : "#",
+                    mp3:"http://qzone.haoduoge.com/music6/2015-07-29/1438162359.mp3"                    
+                },
+                {
+                    title:"<img src='img/sj_index_4.jpg' alt='' /><div class='item-song'>Sands of Time</div>",
+                    buy : "#",
+                    mp3:"http://qzone.haoduoge.com/music6/2015-07-29/1438162359.mp3"
+                }
+            ], {
+                swfPath: "js",
+                supplied: "oga, mp3",
+                wmode: "window",
+                smoothPlayBar: false,
+                keyEnabled: false
+            });
+        });
+        //]]>
+    </script>
+    
+</head>
+<body>
+    <header>
+        <a class="cd-logo" href="#0"><img src="img/logo.png" alt="Logo"></a>
+    </header>
+
+    <div class="fat-nav">
+        <div class="fat-nav_wrapper">
+            <ul>
+                <li><a href="index.html">about me</a></li>
+                <li><a href="songs.html">my songs</a></li>
+                <li><a href="photos.html">photos</a></li>
+                <li><a href="videos.html">videos</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="contact.html">bookings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- Focus Audio Player -->
+                <div class="focus-container focus-audio boxed">
+                    <div class="inner">
+                       <!-- 本地音乐播放器 -->
+                           <div id="jquery_jplayer_1" class="jp-jplayer">
+                           </div>
+                           <div id="jp_container_1" class="jp-audio">
+                               <div class="inner">
+                                   <div class="jp-gui jp-interface">
+                                       <div class="jp-controls-wrap">
+                                           <div class="song_title">
+                                           </div>
+                                           <div class="jp-current-time">
+                                           </div>
+                                           <div class="jp-duration">
+                                           </div>
+                                           <div class="jp-progress">
+                                               <div class="jp-seek-bar">
+                                                   <div class="jp-play-bar">
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <ul class="jp-controls clearfix">
+                                               <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="mticon-volume-high">
+                                               </i></a></li>
+                                               <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="mticon-volume-mute2">
+                                               </i></a></li>
+                                               <li><a href="javascript:;" class="jp-previous disabled" tabindex="1"><i class="mticon-backward">
+                                               </i></a></li>
+                                               <li><a href="javascript:;" class="jp-play" tabindex="1"><i class="mticon-play"></i></a>
+                                               </li>
+                                               <li><a href="javascript:;" class="jp-pause" tabindex="1"><i class="mticon-pause"></i>
+                                               </a></li>
+                                               <li><a href="javascript:;" class="jp-next" tabindex="1"><i class="mticon-forward"></i>
+                                               </a></li>
+                                               <li><a href="javascript:;" class="jp-stop" tabindex="1"></a></li>
+                                               <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat"><i class="mticon-loop">
+                                               </i></a></li>
+                                               <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off"><i
+                                                   class="mticon-loop"></i></a></li>
+                                               <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume"></a>
+                                               </li>
+                                               <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle"></a></li>
+                                               <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off"></a>
+                                               </li>
+                                               <li><a href="javascript:;" class="jp-playlist-toggle" tabindex="1" title="Toggle PlayList">
+                                                   <i class="mticon-list-ul"></i></a></li>
+                                           </ul>
+                                           <div class="jp-volume-bar">
+                                               <div class="jp-volume-bar-value">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="jp-playlist">
+                                       <ul class="jp-playlist-inner">
+                                           <li></li>
+                                       </ul>
+                                   </div>
+                                   <div class="jp-no-solution">
+                                       <span>Update Required</span> <a href="http://get.adobe.com/flashplayer/" target="_blank">
+                                           Flash plugin</a>.
+                                   </div>
+                               </div>
+                           </div>
+                    </div>               
+                </div>
+            <!-- Focus Audio Player -->
+        </div>
+    </main>
+
+    <div class="cd-overlay-nav">
+        <span></span>
+    </div> <!-- cd-overlay-nav -->
+
+    <div class="cd-overlay-content">
+        <span></span>
+    </div> <!-- cd-overlay-content -->
+
+    <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+    <footer>
+        <section class="footer">
+            <a class="coyright" href="">Copyright 2015 Bro. Philemon</a>
+            <a class="powerd" href="">Powerd by:Global Exibit</a>
+        </section>
+    </footer>
+   
+<!-- nav -->
+<script type="text/javascript" src="js/fatNav.js"></script>
+<script >
+    (function() {
+        
+        $.fatNav();
+        
+    }());
+</script>
+<!-- 音乐js -->
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/jplayer.config.js"></script>
+<script src="js/jplayer.playlist.min.js"></script>
+
+</body>
+</html>
